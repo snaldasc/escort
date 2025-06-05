@@ -155,11 +155,14 @@
       box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
     }
 
-    .profile-header {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .profile-header img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
     }
+
 
     .profile-header img {
       max-width: 300px;
