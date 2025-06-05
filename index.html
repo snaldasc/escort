@@ -1,12 +1,18 @@
-<link rel="stylesheet" href="main.css" />
-<link rel="javascript" href="script.js" />
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BB Escort – High Class Begleitung</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
   <header>
     <div class="logo">BB Escort</div>
     <nav>
       <ul>
         <li><a href="#">Startseite</a></li>
-        <li><a href="#">Damen</a></li>
+        <li><a href="#damen">Damen</a></li>
         <li><a href="#">Städte</a></li>
         <li><a href="#">Kategorien</a></li>
         <li><a href="#">Über uns</a></li>
@@ -17,28 +23,46 @@
 
   <section class="hero">
     <h1>High Class Escort für Deutschland & Europa</h1>
-    <p>Erlebe diskrete und leidenschaftliche Begegnungen mit unseren Escort Damen.</p>
+    <p>Diskrete und leidenschaftliche Begegnungen mit unseren Damen.</p>
     <button onclick="scrollToSection()">Damen entdecken</button>
   </section>
 
+  <section class="filter-section">
+    <h2>Vorlieben filtern</h2>
+    <div class="filters">
+      <label><input type="checkbox" value="massage" /> Massage</label>
+      <label><input type="checkbox" value="zärtlich" /> Zärtlich</label>
+      <label><input type="checkbox" value="dominant" /> Dominant</label>
+      <label><input type="checkbox" value="paarbegleitung" /> Paarbegleitung</label>
+      <label><input type="checkbox" value="anal" /> Anal</label>
+    </div>
+  </section>
+
   <section id="damen" class="grid">
-    <div class="card">
-      <img src="https://tse2.mm.bing.net/th?id=OIP.QJaRdj0YC4hXCvUyzAY_JQHaJq&pid=Api&P=0&h=180" alt="Escort 1" />
+    <div class="card" data-tags="massage zärtlich">
+      <img src="https://via.placeholder.com/300x400" alt="Escort 1"/>
       <h3>Marilyn Kulikowa</h3>
-      <p>Dresden – 33 Jahre – 176 cm</p>
+      <p>Dresden – 33 Jahre</p>
+      <span class="tags">Massage, Zärtlich</span>
     </div>
-    <div class="card">
-      <img src="https://www.marsillpost.com/photos/ad/2020/10/11/eb2f7d0b-a5e0-4214-a02f-0976a6a0637d.jpeg" alt="Escort 2" />
+    <div class="card" data-tags="dominant anal">
+      <img src="https://via.placeholder.com/300x400" alt="Escort 2"/>
       <h3>Stella Weber</h3>
-      <p>München – 37 Jahre – 170 cm</p>
+      <p>München – 37 Jahre</p>
+      <span class="tags">Dominant, Anal</span>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x400" alt="Escort 3" />
+    <div class="card" data-tags="zärtlich paarbegleitung">
+      <img src="https://via.placeholder.com/300x400" alt="Escort 3"/>
       <h3>Bianca Sonnenschein</h3>
-      <p>Nürnberg – 19 Jahre – 161 cm</p>
+      <p>Nürnberg – 19 Jahre</p>
+      <span class="tags">Zärtlich, Paarbegleitung</span>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 BB Escort Agentur – Alle Rechte vorbehalten.</p>
   </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
