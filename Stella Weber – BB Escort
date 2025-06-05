@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stella Weber – BB Escort</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+  
+<body>
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/300x400?text=Stella+Weber" alt="Stella Weber">
+      <div class="profile-info">
+        <h1>Stella Weber</h1>
+        <p><strong>Standort:</strong> München</p>
+        <p><strong>Alter:</strong> 37 Jahre</p>
+        <p><strong>Größe:</strong> 170 cm</p>
+        <p><strong>Gewicht:</strong> 67 kg</p>
+        <p><strong>Körbchengröße:</strong> 75 D (mit Silikonimplantaten)</p>
+        <p><strong>Kleidergröße:</strong> 38 EU (M)</p>
+        <p><strong>Schuhgröße:</strong> 39 EU</p>
+        <p><strong>Haarfarbe:</strong> Blond</p>
+        <p><strong>Raucherin:</strong> Tolerante Nichtraucherin</p>
+        <p><strong>Alkoholkonsum:</strong> Ja</p>
+        <p><strong>Beruf:</strong> CEO</p>
+        <p><strong>Sprachen:</strong> Deutsch, Englisch</p>
+        <div class="tags">
+          <strong>Vorlieben:</strong> Duo-Date (Hetero), Duo-Date (Bisexual), MMF
+        </div>
+        <a href="kontakt.html" class="button">Jetzt buchen</a>
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <h2>Über Stella</h2>
+      <p>
+        Bist du auf der Suche nach einer Escort Dame mit Stil? Dann bist du bei mir genau richtig! Als Unternehmerin liebe ich es, mich dem geheimnisvollen und einzigartigen Job der Escort Dame hinzugeben und mich in meiner Freizeit sexuell auszuleben. Erlebe mit mir unvergessliche Momente voller Sinnlichkeit, Erotik und Leidenschaft. Ein Dinner in einem guten Restaurant mit kultivierter Unterhaltung weiß ich ebenfalls sehr zu schätzen! Wenn wir gemeinsam ausgehen, ziehe ich mich elegant und sexy, aber immer passend an. Suchst du eine stilvolle Begleitung, eine gebildete Gesprächspartnerin und eine leidenschaftliche Geliebte auf Zeit? Dann bin ich genau die richtige Escort Dame für dich!
+      </p>
+
+      <h2>Freizeitaktivitäten</h2>
+      <p>Joggen, Eislaufen, Schnorcheln, Schwimmen, Klettern</p>
+
+      <h2>Essensvorlieben</h2>
+      <p>Italienisch, Asiatisch, Mittelmeerküche</p>
+
+      <h2>Getränkevorlieben</h2>
+      <p>Trockener Weißwein, Prosecco, Sprudelwasser</p>
+
+      <h2>Kleine Aufmerksamkeiten</h2>
+      <p>Blumen, Parfüm</p>
+    </div>
+  </div>
+
+</body>
+</html>
