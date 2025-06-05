@@ -6,7 +6,7 @@
     }
 
     /* Header */
-    header {
+     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -19,18 +19,16 @@
       font-weight: bold;
     }
 
-    nav ul {
+   nav ul {
       list-style: none;
       display: flex;
       gap: 15px;
     }
-
     nav a {
       color: #f5f5f5;
       text-decoration: none;
       transition: color 0.3s;
     }
-
     nav a:hover {
       color: #e91e63;
     }
@@ -156,46 +154,72 @@
 }
 
 /* Bild und Info nebeneinander */
-.profile-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.profile-header a {
-  flex-shrink: 0;
-}
-
-.profile-header img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.profile-info {
-  flex: 1;
-}
-
-.profile-info h1 {
-  margin-top: 0;
-  font-size: 2em;
-}
+.profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
+    }
+    .profile-header {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .profile-header img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .profile-info {
+      flex: 1;
+    }
+    .profile-info h1 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+    .profile-info p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .tags {
+      display: block;
+      font-size: 0.85em;
+      color: #aaa;
+      margin: 10px 0 15px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+      user-select: none;
+    }
+    .button:hover {
+      background-color: #c2185b;
+    }
 
 .profile-details {
-  margin-top: 30px;
-}
-
-.profile-details h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.profile-details p {
-  line-height: 1.6;
-}
+      margin-top: 40px;
+    }
+    .profile-details h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #e91e63;
+    }
+    .profile-details p {
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
 
 /* Call-to-Action Button */
 .button {
@@ -228,40 +252,83 @@
 
 /* Modal Hintergrund */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(15,15,15,0.85);
-}
-
-/* Modal Inhalt */
-.modal-content {
-  background-color: #1a1a1a;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  color: #f5f5f5;
-  box-shadow: 0 0 20px #e91e63;
-}
-
-/* Close Button */
-.close {
-  color: #bbb;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #e91e63;
-}
+      display: none; /* versteckt */
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background-color: #222;
+      margin: auto;
+      padding: 30px 25px;
+      border-radius: 10px;
+      max-width: 450px;
+      color: #f5f5f5;
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      color: #e91e63;
+    }
+    .modal-content label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #ddd;
+    }
+    .modal-content input[type="text"],
+    .modal-content input[type="email"],
+    .modal-content input[type="date"],
+    .modal-content textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .modal-content button {
+      background-color: #e91e63;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    .modal-content button:hover {
+      background-color: #c2185b;
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.3s;
+    }
+    .close:hover {
+      color: #e91e63;
+    }
+    #bookingSuccess {
+      margin-top: 15px;
+      color: lightgreen;
+      font-weight: bold;
+      text-align: center;
+    }
 
 /* Formular-Elemente */
 input, textarea, button {
