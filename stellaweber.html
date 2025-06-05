@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stella Weber – BB Escort</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js"></script>
-
 </head>
   
 <body>
@@ -31,40 +29,38 @@
         <div class="tags">
           <strong>Vorlieben:</strong> Duo-Date (Hetero), Duo-Date (Bisexual), MMF
         </div>
-        
-        <!-- Buchen Button -->
-        <a class="button" id="openBooking">Jetzt buchen</a>
-        
-        <!-- Buchungs-Modal -->
-<div id="bookingModal" class="modal">
-  <div class="modal-content">
-    <span id="closeBooking" class="close">&times;</span>
-    <h2>Buchung anfragen</h2>
-    <form id="bookingForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
-      <label for="email">E-Mail:</label>
-      <input type="email" id="email" required />
-      <label for="date">Datum:</label>
-      <input type="date" id="date" required />
-      <label for="message">Nachricht:</label>
-      <textarea id="message" rows="4"></textarea>
-      <button type="submit">Absenden</button>
-    </form>
-    <div id="bookingSuccess" style="display: none;">
-      Vielen Dank! Deine Anfrage wurde gesendet.
-    </div>
-  </div>
-</div>
 
-        
+        <!-- Buchen Button -->
+        <button class="button" id="openBooking">Jetzt buchen</button>
+
+        <!-- Buchungs-Modal -->
+        <div id="bookingModal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeBooking">&times;</span>
+            <h2>Buchung für Stella Weber</h2>
+            <form id="bookingForm">
+              <label for="name">Dein Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="email">E-Mail:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="date">Datum:</label><br>
+              <input type="date" id="date" name="date" required><br><br>
+              <label for="message">Nachricht / Wünsche:</label><br>
+              <textarea id="message" name="message" rows="4"></textarea><br><br>
+              <button type="submit">Buchen</button>
+            </form>
+            <div id="bookingSuccess" style="display:none; margin-top:15px; color: lightgreen;">
+              Vielen Dank! Deine Buchungsanfrage wurde gesendet.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="profile-details">
       <h2>Über Stella</h2>
       <p>
-        Bist du auf der Suche nach einer Escort Dame mit Stil? Dann bist du bei mir genau richtig! Als Unternehmerin liebe ich es, mich dem geheimnisvollen und einzigartigen Job der Escort Dame hinzugeben und mich in meiner Freizeit sexuell auszuleben. Erlebe mit mir unvergessliche Momente voller Sinnlichkeit, Erotik und Leidenschaft. Ein Dinner in einem guten Restaurant mit kultivierter Unterhaltung weiß ich ebenfalls sehr zu schätzen! Wenn wir gemeinsam ausgehen, ziehe ich mich elegant und sexy, aber immer passend an. Suchst du eine stilvolle Begleitung, eine gebildete Gesprächspartnerin und eine leidenschaftliche Geliebte auf Zeit? Dann bin ich genau die richtige Escort Dame für dich!
+        Bist du auf der Suche nach einer Escort Dame mit Stil? Dann bist du bei mir genau richtig! Als Unternehmerin liebe ich es, mich dem geheimnisvollen und einzigartigen Job der Escort Dame hinzugeben und mich in meiner Freizeit sexuell auszuleben...
       </p>
 
       <h2>Freizeitaktivitäten</h2>
@@ -80,32 +76,8 @@
       <p>Blumen, Parfüm</p>
     </div>
   </div>
-<!-- Buchung öffnen Button -->
-<button id="openBooking" class="button">Jetzt buchen</button>
 
-<!-- Modal -->
-<div id="bookingModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeBooking">&times;</span>
-    <h2>Buchung</h2>
-    <form id="bookingForm">
-      <label for="name">Name</label>
-      <input type="text" id="name" required />
-
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" required />
-
-      <label for="date">Datum</label>
-      <input type="date" id="date" required />
-
-      <label for="nachricht">Nachricht</label>
-      <textarea id="nachricht" rows="4" required></textarea>
-
-      <button type="submit">Buchung abschicken</button>
-    </form>
-    <div id="bookingSuccess" style="display:none;">Buchung erfolgreich!</div>
-  </div>
-</div>
-
+  <!-- JavaScript richtig eingebunden -->
+  <script src="script.js" defer></script>
 </body>
 </html>
