@@ -1,148 +1,204 @@
-/* Grundlegende Stile */
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #0f0f0f;
-  color: #f5f5f5;
-}
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0f0f0f;
+      color: #f5f5f5;
+    }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #1a1a1a;
-}
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
 
-nav a {
-  color: #f5f5f5;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-nav a:hover {
-  color: #e91e63;
-}
+    nav a:hover {
+      color: #e91e63;
+    }
 
-/* Hero-Bereich */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600') center/cover no-repeat;
-}
+    /* Hero-Bereich */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
 
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
 
-.hero button {
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: #e91e63;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #e91e63;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
 
-.hero button:hover {
-  background-color: #d81b60;
-}
+    .hero button:hover {
+      background-color: #d81b60;
+    }
 
-/* Grid für Damen */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 50px 20px;
-}
+    /* Grid für Damen */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+    }
 
-.card {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s;
-}
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
+    .card img {
+      width: 100%;
+      height: auto;
+    }
 
-.card h3 {
-  margin: 15px 0 5px;
-}
+    .card h3 {
+      margin: 15px 0 5px;
+    }
 
-.card p {
-  margin-bottom: 15px;
-  color: #ccc;
-}
+    .card p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
 
-.card:hover {
-  transform: scale(1.05);
-}
+    .card:hover {
+      transform: scale(1.05);
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #1a1a1a;
-  color: #777;
-}
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #777;
+    }
 
+    /* Filter-Sektion */
+    .filter-section {
+      padding: 30px 20px;
+      background-color: #121212;
+    }
 
-/* Filter-Sektion */
-.filter-section {
-  padding: 30px 20px;
-  background-color: #121212;
-}
+    .filter-section h2 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
 
-.filter-section h2 {
-  margin-bottom: 15px;
-  font-size: 1.5em;
-}
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
+    .filters label {
+      background: #222;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-.filters label {
-  background: #222;
-  padding: 10px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    .filters input[type="checkbox"] {
+      margin-right: 8px;
+    }
 
-.filters input[type="checkbox"] {
-  margin-right: 8px;
-}
+    /* Tags bei Damen */
+    .card .tags, .tags {
+      display: block;
+      font-size: 0.85em;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
 
-/* Tags bei Damen */
-.card .tags {
-  display: block;
-  font-size: 0.85em;
-  color: #aaa;
-  margin-bottom: 10px;
-}
+    /* Profil-Spezifisch */
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
+    }
+
+    .profile-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .profile-header img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h1 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+
+    .profile-details {
+      margin-top: 30px;
+    }
+
+    .profile-details h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    .profile-details p {
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #c2185b;
+    }
