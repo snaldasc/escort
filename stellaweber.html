@@ -82,6 +82,32 @@
       <p>Blumen, Parfüm</p>
     </div>
   </div>
+<!-- Buchung öffnen Button -->
+<button id="openBooking" class="button">Jetzt buchen</button>
+
+<!-- Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeBooking">&times;</span>
+    <h2>Buchung</h2>
+    <form id="bookingForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" required />
+
+      <label for="date">Datum</label>
+      <input type="date" id="date" required />
+
+      <label for="nachricht">Nachricht</label>
+      <textarea id="nachricht" rows="4" required></textarea>
+
+      <button type="submit">Buchung abschicken</button>
+    </form>
+    <div id="bookingSuccess" style="display:none;">Buchung erfolgreich!</div>
+  </div>
+</div>
 
 </body>
 </html>
