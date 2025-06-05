@@ -146,62 +146,81 @@
     }
 
     /* Profil-Spezifisch */
-    .profile-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
-    }
+.profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
+}
 
-    .profile-header img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-    }
+/* Bild und Info nebeneinander */
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
 
+.profile-header a {
+  flex-shrink: 0;
+}
 
-    .profile-header img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
+.profile-header img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
-    .profile-info {
-      flex: 1;
-    }
+.profile-info {
+  flex: 1;
+}
 
-    .profile-info h1 {
-      margin-top: 0;
-      font-size: 2em;
-    }
+.profile-info h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
 
-    .profile-details {
-      margin-top: 30px;
-    }
+.profile-details {
+  margin-top: 30px;
+}
 
-    .profile-details h2 {
-      font-size: 1.4em;
-      margin-bottom: 10px;
-    }
+.profile-details h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
 
-    .profile-details p {
-      line-height: 1.6;
-    }
+.profile-details p {
+  line-height: 1.6;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #e91e63;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
+/* Call-to-Action Button */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
 
-    .button:hover {
-      background-color: #c2185b;
-    }
+.button:hover {
+  background-color: #c2185b;
+}
+
+/* Responsives Verhalten für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+}
