@@ -30,7 +30,36 @@
         <div class="tags">
           <strong>Vorlieben:</strong> Duo-Date (Hetero), Duo-Date (Bisexual), MMF
         </div>
-        <a href="kontakt.html" class="button">Jetzt buchen</a>
+        
+        <!-- Buchen Button -->
+        <a class="button" id="openBooking">Jetzt buchen</a>
+        
+        <!-- Buchungs-Modal -->
+        <div id="bookingModal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeBooking">&times;</span>
+            <h2>Buchung für Stella Weber</h2>
+            <form id="bookingForm">
+              <label for="name">Dein Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+        
+              <label for="email">E-Mail:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+        
+              <label for="date">Datum:</label><br>
+              <input type="date" id="date" name="date" required><br><br>
+        
+              <label for="message">Nachricht / Wünsche:</label><br>
+              <textarea id="message" name="message" rows="4"></textarea><br><br>
+        
+              <button type="submit">Buchen</button>
+            </form>
+            <div id="bookingSuccess" style="display:none; margin-top:15px; color: lightgreen;">
+              Vielen Dank! Deine Buchungsanfrage wurde gesendet.
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
